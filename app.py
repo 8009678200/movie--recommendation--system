@@ -1,6 +1,11 @@
 import streamlit as st
 import pickle
+import os
+import gdown
 
+if not os.path.exists("similarity.pkl"):
+    url = "https://drive.google.com/uc?id=1pjWXhS66pGi9QU7ErNXxHWjMQu7Z0D4d"
+    gdown.download(url, "similarity.pkl", quiet=False)
 # Page Config
 st.set_page_config(
     page_title="AI Movie Recommendation",
