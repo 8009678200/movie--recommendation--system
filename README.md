@@ -29,6 +29,7 @@ How It Works
 User selects a movie.
 The system finds similar movies using cosine similarity.
 Top recommended movies are displayed instantly.
+
 Developed By
 
 Swati Kosta BE Graduate (AI/ML Specialization)
