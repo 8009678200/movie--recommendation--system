@@ -4,7 +4,7 @@ import os
 import gdown
 
 if not os.path.exists("similarity.pkl"):
-    url = "https://drive.google.com/uc?id=1pjWXhS66pGi9QU7ErNXxHWjMQu7Z0D4d"
+    url = "https://colab.research.google.com/drive/1c6baB3vHUqOZqea6z9AzEaTDTWxfnKNu?usp=drive_link"
     gdown.download(url, "similarity.pkl", quiet=False)
 # Page Config
 st.set_page_config(
