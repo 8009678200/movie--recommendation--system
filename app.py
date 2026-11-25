@@ -4,11 +4,19 @@ import os
 import gdown
 import gdown
 import os
+import streamlit as st
+import pickle
+import os
+import gdown
 
 if not os.path.exists("similarity.pkl"):
-    file_id = "https://drive.google.com/file/d/10Eg7aKNrW40p1FK3MqVDSw_jNkTntY33/view?usp=sharing"
+    file_id = "10Eg7aKNrW40p1FK3MqVDSw_jNkTntY33"
     url = f"https://drive.google.com/uc?id={file_id}"
     gdown.download(url, "similarity.pkl", quiet=False)
+
+movies = pickle.load(open("movies.pkl", "rb"))
+similarity = pickle.load(open("similarity.pkl", "rb"))
+
 
 # Page Config
 st.set_page_config(
